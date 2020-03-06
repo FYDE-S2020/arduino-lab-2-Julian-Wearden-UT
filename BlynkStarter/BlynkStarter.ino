@@ -39,24 +39,22 @@
 
 // You should get Auth Token in the Blynk App.
 // Go to the Project Settings (nut icon).
-char auth[] = "Your token here";
+char auth[] = "eeCWpgqqEdUeJNEt-zi1KdcHXa9cTHoB";
 
 // Your WiFi credentials.
 // Set password to "" for open networks.
 // The EE IOT network is hidden. You might not be able to see it.
 // But you should be able to connect with these credentials. 
-char ssid[32] = "EE-IOT-Platform-02";
-char pass[32] = "g!TyA>hR2JTy";
+char ssid[32] = "utguest";
+char pass[32] = "";
 
 void setup()
 {
   // Serial Monitor
   Serial.begin(115200);
   Blynk.begin(auth, ssid, pass);
-}
-
+} 
 void loop()
 {
   Blynk.run();
 }
-
